@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.FinalController">
+   <children>
+      <ImageView fitHeight="171.0" fitWidth="171.0" layoutX="90.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="80.0">
+         <image>
+            <Image url="@../../AQ00ZqFv_400x400.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="285.0" layoutY="106.0" prefHeight="66.0" prefWidth="424.0" text="The record has been" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="106.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="328.0" layoutY="176.0" prefHeight="63.0" prefWidth="361.0" text="saved successfully!" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="170.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btContinue" layoutX="104.0" layoutY="325.0" mnemonicParsing="false" onAction="#handlebtContinue" prefHeight="94.0" prefWidth="234.0" text="Continue" AnchorPane.bottomAnchor="181.0" AnchorPane.leftAnchor="104.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="btLeave" layoutX="479.0" layoutY="324.0" mnemonicParsing="false" onAction="#handlebtLeave" prefHeight="94.0" prefWidth="234.0" text="Leave">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

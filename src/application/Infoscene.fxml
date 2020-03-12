@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InfoController">
+   <children>
+      <SplitPane dividerPositions="0.3007518796992481" layoutX="-14.0" layoutY="5.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="307.0">
+               <children>
+                  <ImageView fx:id="imgPhoto" fitHeight="237.0" fitWidth="235.0" layoutX="3.0" layoutY="15.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../../pic/4121572829649_.pic.jpg" />
+                     </image>
+                  </ImageView>
+                  <GridPane gridLinesVisible="true" layoutX="18.0" layoutY="238.0" prefHeight="360.0" prefWidth="236.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="238.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.81169128417969" minWidth="10.0" prefWidth="102.4350814819336" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.15907287597656" minWidth="10.0" prefWidth="133.5649185180664" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="ID">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="Name" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="AndrewID" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="Program" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="DOB" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="Gender" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAndrewID" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="x" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblProgram" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="x" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblDOB" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="x" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblGender" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="x" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblName" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="x" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblID" alignment="CENTER" prefHeight="55.0" prefWidth="114.0" text="x" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="486.0">
+               <children>
+                  <SplitPane dividerPositions="0.4693140794223827" layoutX="14.0" layoutY="-1.0" prefHeight="71.0" prefWidth="556.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="-1.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Label layoutX="9.0" layoutY="-4.0" prefHeight="35.0" prefWidth="67.0" text="Last Visit" />
+                              <Label fx:id="lblLastVisit" layoutX="13.0" layoutY="29.0" prefHeight="35.0" prefWidth="236.0" text="Label" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="69.0" prefWidth="188.0">
+                           <children>
+                              <Label layoutX="11.0" layoutY="-2.0" prefHeight="35.0" prefWidth="87.0" text="Visit Times:" />
+                              <Label fx:id="lblVisitTime" layoutX="14.0" layoutY="33.0" prefHeight="35.0" prefWidth="264.0" text="Label" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <SplitPane dividerPositions="0.7482014388489209" layoutX="-5.0" layoutY="485.0" prefHeight="189.0" prefWidth="558.0" AnchorPane.bottomAnchor="0.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="168.0" prefWidth="396.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5513513513513514" layoutX="25.0" layoutY="2.0" orientation="VERTICAL" prefHeight="156.0" prefWidth="396.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Label layoutX="3.0" layoutY="3.0" prefHeight="35.0" prefWidth="102.0" text="Annoucement" />
+                                          <TextArea fx:id="taAnnoucement" editable="false" layoutX="96.0" layoutY="13.0" prefHeight="77.0" prefWidth="304.0" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Label layoutX="13.0" prefHeight="35.0" prefWidth="102.0" text="Alerts" />
+                                          <Label fx:id="lblAlerts" layoutX="13.0" layoutY="38.0" prefHeight="35.0" prefWidth="368.0" text="Label" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="187.0" prefWidth="99.0">
+                           <children>
+                              <Button fx:id="dobt" layoutX="25.0" layoutY="11.0" mnemonicParsing="false" onAction="#handledobt" prefHeight="53.0" prefWidth="101.0" text="Do" />
+                              <Button fx:id="leavebt" layoutX="25.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleleavebt" prefHeight="53.0" prefWidth="101.0" text="Leave" />
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+                  <PieChart fx:id="piechart" layoutX="5.0" layoutY="77.0" prefHeight="323.0" prefWidth="542.0" title="PIE CHART" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

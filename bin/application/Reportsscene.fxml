@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReportController">
+   <children>
+      <Label alignment="CENTER" layoutX="249.0" layoutY="90.0" prefHeight="102.0" prefWidth="276.0" text="Reports" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="269.0" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Label>
+      <Button fx:id="btCategory" layoutX="140.0" layoutY="215.0" mnemonicParsing="false" onAction="#handlebtCategory" prefHeight="79.0" prefWidth="504.0" text="Visiting by categories" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="146.0" AnchorPane.topAnchor="215.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btFrequency" layoutX="145.0" layoutY="317.0" mnemonicParsing="false" onAction="#handlebtFrequency" prefHeight="79.0" prefWidth="504.0" text="Frequency of visits" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="146.0" AnchorPane.topAnchor="330.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btLeave" layoutX="329.0" layoutY="460.0" mnemonicParsing="false" onAction="#handlebtLeave" prefHeight="53.0" prefWidth="129.0" text="Leave" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="329.0" AnchorPane.rightAnchor="342.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

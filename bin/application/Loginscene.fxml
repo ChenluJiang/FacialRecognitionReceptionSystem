@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fitHeight="190.0" fitWidth="200.0" layoutX="75.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="60.0">
+         <image>
+            <Image url="@../../AQ00ZqFv_400x400.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="346.0" layoutY="66.0" prefHeight="82.0" prefWidth="359.0" text="Welcome to" textAlignment="CENTER" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="adminbt" layoutX="49.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleAdminButton" prefHeight="72.0" prefWidth="150.0" text="Admin" textFill="#121b9d" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="receptionbt" layoutX="266.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleReceptionButton" prefHeight="72.0" prefWidth="230.0" text="Receptionist" textFill="#121b9d" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="270.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label layoutX="375.0" layoutY="150.0" prefHeight="93.0" prefWidth="399.0" text="the system!" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitbt" layoutX="587.0" layoutY="378.0" mnemonicParsing="false" onAction="#exit" prefHeight="72.0" prefWidth="160.0" text="Exit" textFill="#121b9d" AnchorPane.bottomAnchor="160.0" AnchorPane.rightAnchor="80.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

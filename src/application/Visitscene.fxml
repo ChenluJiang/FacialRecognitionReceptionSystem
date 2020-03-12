@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VisitController">
+   <children>
+      <ImageView fitHeight="119.0" fitWidth="146.0" layoutX="67.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="70.0">
+         <image>
+            <Image url="@../../AQ00ZqFv_400x400.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="225.0" layoutY="87.0" prefHeight="49.0" prefWidth="180.0" text="Visiting Reason" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="232.0" layoutY="203.0" prefHeight="49.0" prefWidth="101.0" text="Details" AnchorPane.leftAnchor="232.0" AnchorPane.topAnchor="203.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taDetail" layoutX="336.0" layoutY="221.0" prefHeight="111.0" prefWidth="329.0" promptText="Write down the details" AnchorPane.leftAnchor="336.0" AnchorPane.topAnchor="221.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="232.0" layoutY="326.0" prefHeight="49.0" prefWidth="101.0" text="Date" visible="false" AnchorPane.leftAnchor="232.0" AnchorPane.topAnchor="326.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpVisitDate" layoutX="334.0" layoutY="354.0" onAction="#selectStartDate" prefHeight="42.0" prefWidth="324.0" visible="false" AnchorPane.leftAnchor="334.0" AnchorPane.topAnchor="354.0" />
+      <Button fx:id="btSubmit" disable="true" layoutX="218.0" layoutY="461.0" mnemonicParsing="false" onAction="#handlebtSubmit" prefHeight="60.0" prefWidth="141.0" text="Submit" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="218.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btReturn" layoutX="452.0" layoutY="465.0" mnemonicParsing="false" onAction="#handlebtReturn" prefHeight="60.0" prefWidth="141.0" text="Return" AnchorPane.bottomAnchor="80.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <MenuButton fx:id="mbt" layoutX="333.0" layoutY="138.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="350.0" text="Select one visit reason">
+        <items>
+          <MenuItem fx:id="mi1" mnemonicParsing="false" onAction="#selectMake" text="Make appointment" />
+          <MenuItem fx:id="mi2" mnemonicParsing="false" onAction="#selectRent" text="Rent locker" />
+            <MenuItem fx:id="mi3" mnemonicParsing="false" onAction="#selectSubmit" text="Submit assignment" />
+            <MenuItem fx:id="mi4" mnemonicParsing="false" onAction="#selectReport" text="Report lost" />
+            <MenuItem fx:id="mi5" mnemonicParsing="false" onAction="#selectPay" text="Pay tuition" />
+            <MenuItem fx:id="mi6" mnemonicParsing="false" onAction="#selectComplain" text="Complain" />
+            <MenuItem fx:id="mi7" mnemonicParsing="false" onAction="#selectBorrow" text="Borrow stuff" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
